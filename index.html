@@ -1,46 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guitar Shop</title>
-    <link rel="icon" href="img/guitar.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
-    <div id="header">
-
-    </div>
-
-    <div id="products">
-
-    </div>
-
-    <div id="shopping">
-
-    </div>
     
-    
+    <div id="header"></div>
+    <div id="products"></div>
+    <div id="shopping"></div>
+    <div id="preloader"></div>
+    <div id="error"></div>
 
-    <script src="constants/catalog.js"></script>
+    <!-- Constants and Utils -->
     <script src="constants/root.js"></script>
-    <script src="utils/localStorage.Util.js"></script>
-    
-    <!-- Products Component -->
+    <script src="utils/localStorageUtil.js"></script>
+
+    <!-- Header -->
+    <script src="components/Header/Header.js"></script>
+    <link rel="stylesheet" href="components/Header/Header.css">
+
+    <!-- Products -->
     <script src="components/Products/Products.js"></script>
     <link rel="stylesheet" href="components/Products/Products.css">
 
-    <!-- Header Component -->
-    <script src="components/Header/Header.js"></script>
-    <link rel="stylesheet" href="components/Header/Header.css">
-    
-    
-    
-    <!-- Shopping component -->
+    <!-- Shopping -->
     <script src="components/Shopping/Shopping.js"></script>
     <link rel="stylesheet" href="components/Shopping/Shopping.css">
 
+    <!-- Preloader -->
+    <script src="components/Preloader/Preloader.js"></script>
+    <link rel="stylesheet" href="components/Preloader/Preloader.css">
+
+    <!-- Error -->
+    <script src="components/Error/Error.js"></script>
+    <link rel="stylesheet" href="components/Error/Error.css">
+
+    <!-- Подтягивание каталога через ajax -->
+    <script src="index.js"></script> 
 </body>
 </html>
