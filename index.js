@@ -8,7 +8,7 @@ preloaderPage.render();
 
 let CATALOG = [];
 
-fetch('http://myjson.dit.upm.es/api/bins/1vow')
+fetch('https://myjson.dit.upm.es/api/bins/1vow')
                 .then(res => res.json())
                 .then(body => {
                     CATALOG = body;
